@@ -1,0 +1,31 @@
+#! /bin/sh
+
+sxhkd &
+picom -f &
+nitrogen --restore 
+
+# bspc monitor -d I II III IV V VI VII VIII IX X
+if xrandr -q | grep 'HDMI1 connected'; then
+    xrandr --output HDMI1 --mode 1920x1080 --right-of eDP1
+    bspc monitor eDP1 -d I IV V
+    bspc monitor HDMI1 -d I II III
+else
+    bspc monitor eDP1 -d I II III IV V
+fi
+xrandr --output eDP1 --mode 1920x1080
+
+bspc config border_width         2
+bspc config window_gap          10
+
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+bspc rule -a Gimp desktop='^8' state=floating follow=on
+bspc rule -a Chromium desktop='II'
+bspc rule -a discord desktop='V'
+bspc rule -a mplayer2 state=floating
+bspc rule -a Kupfer.py focus=on
+bspc rule -a Screenkey manage=off
+
+$HOME/.config/polybar/launch.sh
