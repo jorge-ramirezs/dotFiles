@@ -19,6 +19,9 @@ super + @space
 #     notify-send -i lxappearence "Run GUI program" "Launching Email Client" && lxappearence \
 #     }
 
+super + ctrl + b
+    chromium
+
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd

@@ -17,32 +17,20 @@
 ;==========================================================
 
 ;=====================================================
-;     File Includes
+;    Colors 
 ;=====================================================
-
-[section/base]
-include-file = ~/.config/polybar/colors
-include-file = ~/.config/polybar/master
-include-file = ~/.config/polybar/modules
-
-;=====================================================
-;     bspwm Bars
-;=====================================================
-
-[bar/eDP1]
-inherit = bar/master
-monitor = eDP1
-
-modules-left = bspwm i3 xwindow
-modules-center = 
-; modules-right = pacman-updates filesystem xkeyboard temperature battery pulseaudio wlan date powermenu
-modules-right = pacman-updates filesystem xkeyboard memory cpu temperature battery pulseaudio wlan date powermenu
-
-[bar/HDMI1]
-inherit = bar/master
-monitor = HDMI1
-
-modules-left = bspwm i3 xwindow
-modules-center = 
-modules-right = pacman-updates filesystem xkeyboard memory cpu temperature battery pulseaudio wlan date 
-
+[colors]
+;background = ${xrdb:color0:#222}
+background = #282828
+background-alt-0 = #504945
+background-alt-1 = #A89984
+background-alt-2 = #3C3836
+background-orange = #FE8019
+;foreground = ${xrdb:color7:#222}
+foreground = #dfdfdf
+foreground-empty = #504945
+foreground-alt = #282828
+foreground-alt-0 = #928374
+primary = #FC802D
+secondary = #e60053
+alert = #bd2c40

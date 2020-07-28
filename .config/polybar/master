@@ -16,26 +16,11 @@
 ;
 ;==========================================================
 
-[colors]
-;background = ${xrdb:color0:#222}
-background = #282828
-background-alt-0 = #504945
-background-alt-1 = #A89984
-background-alt-2 = #3C3836
-background-orange = #FE8019
-;foreground = ${xrdb:color7:#222}
-foreground = #dfdfdf
-foreground-empty = #504945
-foreground-alt = #282828
-foreground-alt-0 = #928374
-primary = #FC802D
-secondary = #e60053
-alert = #bd2c40
 
 [bar/master]
 width = 100%
 height = 27
-radius = 5.0
+;radius = 5.0
 fixed-center = false
 
 background = ${colors.background}
@@ -44,8 +29,8 @@ foreground = ${colors.foreground}
 line-size = 3
 line-color = ${colors.background-orange}
 
-border-size = 2
-border-color = #00000000
+; border-size = 2
+; border-color = #00000000
 
 padding-left = 1
 padding-right = 1
@@ -60,7 +45,7 @@ font-3 = Font Awesome 5 Free:style=Solid;size=12;2
 font-4 = MesloLGL Nerd Font:size=14;2
 
 ;=====================================================
-;   Modules 
+;   Bar Master Configuration
 ;=====================================================
 modules-left = bspwm i3 xwindow
 modules-center = 
@@ -84,3 +69,16 @@ wm-restack = bspwm
 cursor-click = pointer
 cursor-scroll = ns-resize
 
+[settings]
+screenchange-reload = true
+;compositing-background = xor
+;compositing-background = screen
+;compositing-foreground = source
+;compositing-border = over
+;pseudo-transparency = false
+
+[global/wm]
+margin-top = 3
+margin-bottom = 3
+
+; vim:ft=dosini
