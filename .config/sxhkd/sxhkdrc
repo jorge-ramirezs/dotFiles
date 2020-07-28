@@ -10,6 +10,10 @@ super + Return
 super + @space
 	dmenu_run
 
+# Lock Screen
+super + alt + g ; {l}
+    {betterlockscreen -l dim bluri}
+
 # My Apps
 # GUI
 # super + g ; {1-3}
