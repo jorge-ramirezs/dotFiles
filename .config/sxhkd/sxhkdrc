@@ -11,9 +11,13 @@ super + Return
 super + {r,shift + r }
 	dmenu_run
 
+# Audio Mixer
+Audio{Raise,Lower}Volume
+    amixer sset Master {1+,1-} unmute
+
 # Lock Screen
-super + alt + g ; {l}
-    {betterlockscreen -l dim bluri}
+super + b
+    betterlockscreen -l dim blur
 
 # My Apps
 # GUI
@@ -27,6 +31,8 @@ super + alt + g ; {l}
 super + ctrl + b
     chromium
 
+super + ctrl + o
+    obs
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd

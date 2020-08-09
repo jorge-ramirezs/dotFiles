@@ -1,7 +1,8 @@
 #! /bin/sh
 
 sxhkd &
-picom -f &
+picom --experimental-backends -f &
+# picom -f &
 nitrogen --restore 
 $HOME/bin/keyboard_layout.sh
 
