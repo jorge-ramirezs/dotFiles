@@ -11,6 +11,10 @@ super + Return
 super + {r,shift + r }
 	dmenu_run
 
+# Nautilus
+super + n
+    nautilus
+
 # Audio Mixer
 Audio{Raise,Lower}Volume
     amixer sset Master {1+,1-} unmute

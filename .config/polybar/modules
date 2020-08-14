@@ -316,8 +316,14 @@ label-volume = %percentage%%
 format-volume-foreground = ${colors.foreground-alt-0}
 format-volume-background = ${colors.background-alt-0}
 
+
+format-muted-prefix = ""
+format-muted-prefix-font = 5
+format-muted-prefix-foreground = ${colors.background-alt-0}
+format-muted-prefix-background = ${colors.background-alt-1}
 label-muted = 婢 muted
-label-muted-foreground = #666
+label-muted-foreground = ${colors.foreground-alt}
+format-muted-background = ${colors.background-alt-0}
 
 ramp-volume-0 = 
 ramp-volume-1 = 墳
@@ -427,7 +433,7 @@ format-disconnected =
 type = internal/date
 interval = 5
 
-date =
+date = "%a. %e"
 date-alt = " %Y-%m-%d"
 
 time = %H:%M
@@ -438,7 +444,7 @@ format-prefix-font = 5
 format-prefix-foreground = ${colors.background-orange}
 format-prefix-background = ${colors.background-alt-1}
 
-label =  %date% %time%
+label =   %date%  %time%
 format-foreground = ${colors.foreground-alt}
 format-background = ${colors.background-orange}
 
