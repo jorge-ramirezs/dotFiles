@@ -9,7 +9,8 @@ super + Return
 # program launcher
 # super + @space
 super + {r,shift + r }
-	dmenu_run
+    ~/.config/rofi/launchers/launcher.sh
+	# dmenu_run
 
 # Nautilus
 super + n
