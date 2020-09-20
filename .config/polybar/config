@@ -36,7 +36,7 @@ inherit = bar/master
 monitor = eDP1
 
 modules-left = bspwm i3 xwindow
-modules-center = 
+modules-center = eth
 ; modules-right = pacman-updates filesystem xkeyboard temperature battery pulseaudio wlan date powermenu
 modules-right = pacman-updates filesystem xkeyboard memory cpu temperature battery pulseaudio wlan date powermenu
 

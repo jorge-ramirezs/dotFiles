@@ -8,8 +8,9 @@ super + Return
 
 # program launcher
 # super + @space
-super + {r,shift + r }
-    ~/.config/rofi/launchers/launcher.sh
+# super + {r,shift + r }
+    # ulauncher
+    # ~/.config/rofi/launchers/launcher.sh
 	# dmenu_run
 
 # Nautilus
@@ -35,6 +36,9 @@ super + b
 
 super + ctrl + b
     chromium
+
+super + ctrl + f
+    firefox
 
 super + ctrl + o
     obs
