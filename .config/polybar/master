@@ -48,7 +48,7 @@ font-4 = MesloLGL Nerd Font:size=14;2
 ;   Bar Master Configuration
 ;=====================================================
 modules-left = bspwm i3 xwindow
-modules-center = 
+modules-center =
 modules-right = pacman-updates filesystem xkeyboard memory cpu temperature battery pulseaudio wlan date 
 
 tray-position = right

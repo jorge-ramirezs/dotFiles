@@ -35,6 +35,9 @@ super + b
 #     }
 
 super + ctrl + b
+    brave
+
+super + ctrl + c
     chromium
 
 super + ctrl + f

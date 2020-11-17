@@ -4,14 +4,16 @@ sxhkd &
 picom --experimental-backends --backend glx &
 # picom -f &
 nitrogen --restore &
+nm-applet &
+pasystray &
 ulauncher &
 ~/bin/keyboard_layout.sh
 
 # bspc monitor -d I II III IV V VI VII VIII IX X
 if xrandr -q | grep 'HDMI1 connected'; then
     xrandr --output HDMI1 --mode 1920x1080 --right-of eDP1
-    bspc monitor eDP1 -d I IV V VII
-    bspc monitor HDMI1 -d I II III VI VIII
+    bspc monitor eDP1 -d I IV V VII X
+    bspc monitor HDMI1 -d II III VI VIII IX
 else
     bspc monitor eDP1 -d I II III IV V VI VII VIII
 fi
@@ -28,6 +30,7 @@ bspc rule -a nautilus desktop='III' state=floating follow=on
 bspc rule -a Gimp desktop='VIII' state=floating follow=on
 bspc rule -a Chromium desktop='II'
 bspc rule -a firefox desktop='II' follow=on
+bspc rule -a Brave-browser desktop='II' follow=on
 bspc rule -a discord desktop='V'
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on

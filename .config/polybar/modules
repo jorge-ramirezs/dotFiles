@@ -30,6 +30,8 @@ ws-icon-3 = IV;
 ws-icon-4 = V;ﭮ
 ws-icon-5 = VI;
 ws-icon-6 = VII;
+ws-icon-7 = VIII;
+ws-icon-8 = IX;者
 ws-icon-default = 
 
 label-focused = %icon%

@@ -46,5 +46,5 @@ monitor = HDMI1
 
 modules-left = bspwm i3 xwindow
 modules-center = 
-modules-right = pacman-updates filesystem xkeyboard memory cpu temperature battery pulseaudio wlan date 
+modules-right = pacman-updates filesystem xkeyboard memory cpu temperature battery pulseaudio wlan date powermenu
 
