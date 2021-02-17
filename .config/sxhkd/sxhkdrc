@@ -4,14 +4,17 @@
 
 # terminal emulator
 super + Return
-	alacritty
+	kitty
 
 # program launcher
 # super + @space
 # super + {r,shift + r }
     # ulauncher
     # ~/.config/rofi/launchers/launcher.sh
-	# dmenu_run
+    #
+super + d
+    rofi -show run
+    # dmenu_run
 
 # Nautilus
 super + n
