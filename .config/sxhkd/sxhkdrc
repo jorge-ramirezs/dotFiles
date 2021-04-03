@@ -21,8 +21,16 @@ super + n
     nautilus
 
 # Audio Mixer
-Audio{Raise,Lower}Volume
-    amixer sset Master {1+,1-} unmute
+# Audio{Raise,Lower}Volume
+    # amixer sset Master {1+,1-} unmute
+
+	#Volume Control
+XF86AudioLowerVolume
+	pamixer --decrease 5
+XF86AudioRaiseVolume
+	pamixer --increase 5
+XF86AudioMute
+        pamixer --toggle-mute
 
 # Lock Screen
 super + b
