@@ -12,7 +12,7 @@ ulauncher &
 
 # bspc monitor -d I II III IV V VI VII VIII IX X
 if xrandr -q | grep 'HDMI1 connected'; then
-    xrandr --output HDMI1 --mode 1920x1080 --right-of eDP1
+    xrandr  --output eDP1 --mode 1920x1080 --output HDMI1 --mode 1920x1080 --right-of eDP1
     bspc monitor eDP1 -d I III V VIII X
     bspc monitor HDMI1 -d II IV VI VII IX
 else
